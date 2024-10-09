@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#333
+}
+
+h1, h2, h3 {
+    color: #2d5044; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #a0aca1;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-list li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3 parts for article, 1 part for aside */
+    gap: 20px; /* Space between columns */
+    margin: 20px;
+}
+
+article {
+    padding: 20px;
+}
+
+aside {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/*gallery*/
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 150px; 
+    margin-top: 20px;
+}
+
+.gallery {
+    background-color: #a0aca1;
+}
+
+.gallery-item img {
+    width: 300px; 
+    height: 500px; 
+    display: block; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background-color: #c2baba88;
+}
+
+.social {
+    display: flex;
+    align-items: center; 
+}
+
+.social a {
+    margin-right: 15px; 
+    text-decoration: none; 
+    color: inherit;
+}
+
+.social a:last-child {
+    margin-right: 0; 
+}
+
+.social p {
+    margin: 0 10px 0 0;
+}
+
+.copy {
+    text-align: right; 
+}
